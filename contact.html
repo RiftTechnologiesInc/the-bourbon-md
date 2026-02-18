@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — The Bourbon MD</title>
+  <meta name="description" content="Get in touch with The Bourbon MD — located at 209 W Market St, Bluffton, IN 46714." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="solid">
+    <nav class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="assets/mdlogo.png" alt="The Bourbon MD Logo" />
+        <span class="nav-brand-name">The Bourbon MD</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#hours">Hours</a>
+        <a href="vip.html">VIP</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <nav class="mobile-nav">
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="index.html#hours">Hours</a>
+      <a href="vip.html">VIP</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- ── PAGE HEADER ── -->
+  <div class="page-header">
+    <div class="page-header-bg" style="background-image: url('assets/MD-BAR.png');"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <span class="section-label">Reach Out</span>
+      <h1>Contact</h1>
+    </div>
+  </div>
+
+
+  <!-- ── CONTACT MAIN ── -->
+  <section style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info fade-up">
+          <h2>Come Visit Us</h2>
+
+          <div class="contact-detail">
+            <h4>Address</h4>
+            <address>
+              THE BOURBON MD LLC<br />
+              209 W Market St<br />
+              Bluffton, IN 46714<br />
+              United States
+            </address>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Phone</h4>
+            <p><a href="tel:+12603513138">260-351-3138</a></p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Email</h4>
+            <p><a href="mailto:Bourbon.MD.Bluffton@gmail.com">Bourbon.MD.Bluffton@gmail.com</a></p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Follow Us</h4>
+            <p>
+              <a href="#" target="_blank" rel="noopener" style="color: var(--text-accent);">Instagram</a>
+              &nbsp;&nbsp;
+              <a href="#" target="_blank" rel="noopener" style="color: var(--text-accent);">Facebook</a>
+            </p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Hours</h4>
+            <p style="line-height: 2;">
+              Mon – Wed &nbsp; Closed<br />
+              Thu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3:00 pm – 10:00 pm<br />
+              Fri – Sat &nbsp;&nbsp;&nbsp;&nbsp; 3:00 pm – 12:00 am<br />
+              Sun &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3:00 pm – 10:00 pm
+            </p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form fade-up" style="transition-delay: 0.15s;">
+          <h2>Send a Message</h2>
+
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="555-555-5555" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+
+          <div id="formSuccess" class="form-success">
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; margin-bottom: 10px;">
+              Thank you for reaching out!
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              We'll get back to you as soon as possible.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── MAP SECTION ── -->
+  <section style="padding: 0; background: var(--bg-alt);">
+    <div style="width: 100%; height: 380px; background: #111; display: flex; align-items: center; justify-content: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <!-- Replace this div with an actual Google Maps embed iframe -->
+      <div style="text-align: center;">
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--text-heading); margin-bottom: 12px;">
+          209 W Market St, Bluffton, IN 46714
+        </p>
+        <a
+          href="https://maps.google.com/?q=209+W+Market+St,+Bluffton,+IN+46714"
+          target="_blank"
+          rel="noopener"
+          class="btn"
+          style="margin-top: 16px;"
+        >Open in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-brand">
+          <img src="assets/mdlogo.png" alt="The Bourbon MD Logo" />
+          <span class="footer-brand-name">The Bourbon MD</span>
+        </div>
+        <p style="font-size:0.85rem; color:var(--text-muted); max-width:260px; line-height:1.8;">
+          A tradition of fine spirits and premium cigars in the heart of Bluffton, Indiana.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Location</h4>
+        <address>
+          THE BOURBON MD LLC<br />
+          209 W Market St<br />
+          Bluffton, IN 46714<br />
+          United States
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:Bourbon.MD.Bluffton@gmail.com">Bourbon.MD.Bluffton@gmail.com</a><br />
+          <a href="tel:+12603513138">260-351-3138</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#hours">Hours</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 The Bourbon MD LLC. All rights reserved.
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
