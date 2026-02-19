@@ -146,11 +146,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const formSuccess = document.getElementById('formSuccess');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', e => {
+    contactForm.addEventListener('submit', async e => {
       e.preventDefault();
-      // Replace with actual form submission (Formspree, EmailJS, etc.)
-      contactForm.style.display = 'none';
-      if (formSuccess) formSuccess.style.display = 'block';
+      const data = new FormData(contactForm);
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          contactForm.style.display = 'none';
+          if (formSuccess) formSuccess.style.display = 'block';
+        } else {
+          alert('Something went wrong. Please try again or email us directly.');
+        }
+      } catch {
+        alert('Something went wrong. Please try again or email us directly.');
+      }
     });
   }
 
