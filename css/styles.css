@@ -1193,6 +1193,109 @@ footer {
     text-align: left;
     padding: 0;
   }
+
+  /* Homepage-only mobile refinements */
+  .home-page .container { padding: 0 20px; }
+
+  .home-page .hero {
+    min-height: 100svh;
+    height: 100svh;
+  }
+  .home-page .hero-content { padding: 20px 18px 34px; }
+  .home-page .hero-bracket {
+    padding: 12px 20px;
+    margin-bottom: 18px;
+  }
+  .home-page .hero-bracket::before,
+  .home-page .hero-bracket::after {
+    width: 24px;
+    height: 24px;
+  }
+  .home-page .hero-content h1 {
+    letter-spacing: 0.05em;
+    line-height: 1.02;
+  }
+  .home-page .hero-divider {
+    margin-bottom: 16px;
+  }
+  .home-page .hero-divider-line { width: 40px; }
+  .home-page .hero-slogan {
+    font-size: 1.12rem;
+    letter-spacing: 0.04em;
+    line-height: 1.45;
+    max-width: 24ch;
+    margin: 0 auto 2px;
+  }
+  .home-page .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    padding: 14px 20px;
+    margin-top: 24px;
+  }
+
+  .home-page .about-inner { gap: 28px; }
+  .home-page .about-text h2 { margin-bottom: 16px; }
+  .home-page .about-text p {
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+  .home-page .about-image img { height: 260px; }
+
+  .home-page .feature-img-side { height: 240px; }
+  .home-page .feature-text-side,
+  .home-page .feature-text-right { padding: 34px 20px; }
+  .home-page .feature-fullbleed-text h2::after {
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+  .home-page .feature-fullbleed-text .subtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .home-page .reviews-section > .container > h2 { margin-bottom: 34px; }
+  .home-page .carousel-wrapper { max-width: 100%; }
+  .home-page .review-card { padding: 28px 20px; }
+  .home-page .review-stars {
+    font-size: 1.05rem;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+  }
+  .home-page .review-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 22px;
+  }
+  .home-page .carousel-controls {
+    margin-top: 20px;
+    gap: 12px;
+  }
+  .home-page .carousel-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .home-page .hours-section h2 { margin-bottom: 34px; }
+  .home-page .hours-table {
+    margin-bottom: 30px;
+  }
+  .home-page .hours-table td { padding: 16px 8px; }
+  .home-page .hours-table td:first-child { font-size: 1.12rem; }
+  .home-page .hours-table td:last-child { font-size: 0.92rem; }
+  .home-page .hours-social-note {
+    font-size: 0.82rem;
+    line-height: 1.8;
+    max-width: 38ch;
+    margin: 0 auto;
+  }
+
+  .home-page footer { padding-top: 52px; }
+  .home-page .footer-grid {
+    gap: 30px;
+    padding-bottom: 34px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1202,4 +1305,43 @@ footer {
   .review-card { padding: 28px 20px; }
   .menu-nav-inner { flex-wrap: wrap; }
   .menu-nav-inner a { padding: 14px 18px; }
+
+  /* Homepage-only narrow mobile refinements */
+  .home-page .container { padding: 0 16px; }
+  .home-page .nav-inner { height: 70px; }
+  .home-page .nav-brand { gap: 10px; }
+  .home-page .nav-brand img { height: 38px; }
+  .home-page .nav-brand-name { font-size: 1.05rem; }
+  .home-page .mobile-nav {
+    top: 70px;
+    padding: 20px 16px;
+    gap: 16px;
+  }
+  .home-page .mobile-nav a {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+  }
+
+  .home-page .hero {
+    min-height: 92svh;
+    height: 92svh;
+  }
+  .home-page .hero-content h1 { font-size: 2.35rem; }
+  .home-page .hero-slogan { font-size: 1rem; }
+  .home-page .hero-scroll-indicator { bottom: 18px; }
+
+  .home-page .about-image img { height: 220px; }
+  .home-page .feature-img-side { height: 200px; }
+  .home-page .feature-fullbleed-text h2 { font-size: 2rem; }
+
+  .home-page .review-card { padding: 24px 16px; }
+  .home-page .review-text { font-size: 0.95rem; }
+
+  .home-page .hours-table td:first-child { font-size: 1rem; }
+  .home-page .hours-table td:last-child { font-size: 0.86rem; }
+
+  .home-page .footer-bottom {
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+  }
 }
