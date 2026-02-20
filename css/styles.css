@@ -313,7 +313,7 @@ header.solid {
 /* ════════════════════════════════════════
    ABOUT SECTION (homepage)
    ════════════════════════════════════════ */
-.about-section { background: var(--bg-primary); }
+.about-section { background: var(--bg-primary); padding-bottom: 200px; }
 
 .about-inner {
   display: grid;
@@ -1141,7 +1141,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  section { padding: 72px 0; }
+  section { padding: 88px 0; }
 
   .nav-links { display: none; }
   .hamburger { display: flex; }
@@ -1234,7 +1234,8 @@ footer {
     margin-top: 24px;
   }
 
-  .home-page .about-inner { gap: 28px; }
+  .home-page .about-section { padding-bottom: 130px; }
+  .home-page .about-inner { gap: 40px; }
   .home-page .about-text h2 { margin-bottom: 16px; }
   .home-page .about-text p {
     font-size: 0.98rem;
@@ -1242,9 +1243,9 @@ footer {
   }
   .home-page .about-image img { height: 260px; }
 
-  .home-page .feature-img-side { height: 240px; }
+  .home-page .feature-img-side { height: 270px; }
   .home-page .feature-text-side,
-  .home-page .feature-text-right { padding: 34px 20px; }
+  .home-page .feature-text-right { padding: 52px 24px; }
   .home-page .feature-fullbleed-text h2::after {
     margin-top: 14px;
     margin-bottom: 16px;
@@ -1330,8 +1331,8 @@ footer {
   .home-page .hero-slogan { font-size: 1rem; }
   .home-page .hero-scroll-indicator { bottom: 18px; }
 
-  .home-page .about-image img { height: 220px; }
-  .home-page .feature-img-side { height: 200px; }
+  .home-page .about-image img { height: 240px; }
+  .home-page .feature-img-side { height: 230px; }
   .home-page .feature-fullbleed-text h2 { font-size: 2rem; }
 
   .home-page .review-card { padding: 24px 16px; }
